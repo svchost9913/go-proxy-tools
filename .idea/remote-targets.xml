@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="uuser@100.42.231.146:22" type="ssh/sftp" uuid="2939852f-7bbf-4409-b81d-c15ceac11678">
+        <config>
+          <option name="projectRootOnTarget" value="/home/uuser/go-proxy-tool" />
+          <option name="serverName" value="uuser@100.42.231.146:22 password" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="goPath" value="/home/uuser" />
+            <option name="goRoot" value="/usr/local/go/bin/go" />
+          </config>
+        </ContributedStateBase>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config />
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
