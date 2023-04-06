@@ -171,7 +171,7 @@ func GetProxyUrl(url string) ([]string, error) {
 func main() {
 	global.InitLogger()
 	InitRedis()
-	url := "https://domain.svchostok.pro/f?data=body=%22get%20all%20proxy%20from%20proxy%20pool%22"
+	url := "body=%22get%20all%20proxy%20from%20proxy%20pool%22"
 	timer := time.NewTimer(7 * time.Hour) // 创建一个 3 小时的计时器
 	for {
 		select {
@@ -182,7 +182,7 @@ func main() {
 				fmt.Println("Error:", err)
 				return
 			}
-			_, err = fetchAll(urls, 5)
+			_, err = fetchAll(urls, 30)
 			if err != nil {
 				fmt.Println("Error:", err)
 				return
